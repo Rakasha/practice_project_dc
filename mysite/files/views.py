@@ -9,6 +9,13 @@ import os
 from .forms import UploadFileForm
 
 
+
+class FileUploadPage(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'v_upload.html')
+
+
 class FileActions(View):
 
     def get(self, request, *args, **kwargs):
