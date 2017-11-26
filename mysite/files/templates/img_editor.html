@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="init editor" onclick="init_editor()"/>
+    <div id="myapp">
+        <img id="myImg" src="{% static 'img/Lenna.png' %}"/>
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        <canvas id="blurCanvas" width="500" height="500"></canvas>
+    </div>
+
+</body>
+
+
+<script src="{% static 'js/node_modules/cropperjs/dist/cropper.js' %}"></script>
+<script src="http://close-pixelate.desandro.com/close-pixelate.js"></script>
+<script src="{% static 'js/filters.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+
+</html>
