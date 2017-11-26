@@ -9,6 +9,11 @@ import os
 from .forms import UploadFileForm
 
 
+class ImgEditor(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'img_editor.html')
+
+
 class FileActions(View):
 
     def get(self, request, *args, **kwargs):
